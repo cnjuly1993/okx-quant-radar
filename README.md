@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/logo-256.png" width="140" alt="OKX Quant Radar"></p>
+
 # OKX Quant Radar
 
 **跑在你自己电脑上的 OKX 永续合约自动化交易系统** —— 定时扫描全市场、按多周期信号自动开仓、自动挂止盈止损，配一个本地控制台和一个数据看板。
