@@ -60,6 +60,30 @@
 
 - [安装与配置](docs/install.md) — 环境要求、创建 API Key、Windows / Linux 部署、配置字段说明、实盘前验证清单
 - [常见问题](docs/faq.md) — 密钥安全、收益与风险、使用与故障排查
+- [示例代码](examples/README.md) — 最小可运行示例：一条命令看到整套交易链路怎么走
+
+## 这个仓库里有什么，怎么验证
+
+| 有 | 没有 |
+|---|---|
+| 项目说明与完整使用文档 | 策略信号逻辑 |
+| **可以自己跑通的最小可运行示例** | 风控闸门与仓位管理 |
+| OKX AI Builder Code 的接入方式 | 调度器与完整程序本体 |
+
+完整程序是本项目的核心资产，通过私有交付提供。但**集成方式是可以亲自验证的**——不需要相信文档，直接跑：
+
+```bash
+# 1) 先看它会做什么，不下单、不碰账户
+node examples/minimal-demo.js
+
+# 2) 有 API Key 的话，验证账户读取链路
+node examples/minimal-demo.js --read
+
+# 3) 在模拟盘真的下一笔、查状态、再撤掉（虚拟资金）
+node examples/minimal-demo.js --place --demo --amountUsdt 20
+```
+
+示例本身不含任何策略，只是把「行情 → 下单 → 挂止盈止损 → 查询 → 撤单」这条链路和 Builder Code 的带法完整演示一遍。上面这条模拟盘路径已实测跑通，输出记录见 [examples/README.md](examples/README.md#实测记录)。
 
 ## 安全设计
 
