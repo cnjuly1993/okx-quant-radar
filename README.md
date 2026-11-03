@@ -73,7 +73,7 @@
 ## 状态
 
 - 当前版本：持续迭代中
-- 接入状态：已接入 OKX AI Builder Program（交易走官方 CLI，携带 Builder Code 归因）
+- 接入状态：正在接入 OKX AI Builder Program（交易走官方 CLI，下单携带 Builder Code 用于归因）
 
 ## 联系
 
