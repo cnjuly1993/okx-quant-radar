@@ -1,0 +1,69 @@
+MIT License
+
+Copyright (c) 2026 OKX Quant Radar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+ADDITIONAL RISK DISCLAIMER / 附加风险声明
+================================================================================
+
+THIS SOFTWARE EXECUTES LIVE TRADING ORDERS ON CRYPTOCURRENCY PERPETUAL
+CONTRACTS. THAT IS INHERENTLY DANGEROUS AND CAN RESULT IN THE TOTAL LOSS OF
+YOUR CAPITAL.
+
+本软件会对加密货币永续合约提交真实交易订单。这本身具有极高风险，可能导致
+你损失全部本金。
+
+BY USING THIS SOFTWARE YOU ACKNOWLEDGE AND AGREE THAT:
+
+1. You are solely responsible for every order placed by this software on your
+   account, including orders you did not expect or intend.
+2. Trading cryptocurrency perpetual contracts with leverage can wipe out your
+   entire balance. Do not use money you cannot afford to lose completely.
+3. Automated trading can malfunction: network interruptions, API rate limits,
+   parameter misconfiguration, extreme market conditions, bugs, and third-party
+   outages can all cause unintended orders or missed stop losses.
+4. This software makes NO representation about profitability, expected returns,
+   or suitability for any purpose. Past performance does not predict future
+   results.
+5. Nothing in this repository constitutes financial, investment, legal, or tax
+   advice.
+6. You are responsible for compliance with all laws and exchange terms
+   applicable to you.
+7. The authors and contributors accept NO liability for any financial loss,
+   legal consequence, or other damages arising from the use of this software.
+
+使用本软件即表示你确认并同意：
+
+1. 本软件在你账户上提交的每一笔订单（包括你未预期、未打算下的订单）都由你
+   自行负责。
+2. 杠杆交易可能导致余额全部损失。请只投入你完全亏得起的资金。
+3. 自动化交易可能出错：网络中断、接口限流、参数配置错误、极端行情、程序缺陷、
+   第三方服务故障等，都可能造成非预期下单或止损未及时生效。
+4. 本软件不对盈利性、预期收益或适用性作任何承诺。历史表现不代表未来结果。
+5. 本仓库的任何内容都不构成投资、财务、法律或税务建议。
+6. 你有责任遵守适用于你的所有法律法规与交易所条款。
+7. 作者与贡献者对使用本软件造成的任何资金损失、法律后果或其他损害，
+   不承担任何责任。
+
+================================================================================
+IF YOU DO NOT ACCEPT THESE TERMS, DO NOT USE THIS SOFTWARE.
+如果你不接受以上条款，请不要使用本软件。
+================================================================================

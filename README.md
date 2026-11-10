@@ -8,6 +8,33 @@
 
 ---
 
+## 下载
+
+| 平台 | 文件 | SHA-256 |
+|---|---|---|
+| **Windows**（推荐） | [`OKX-Quant-Windows.exe`](dist/OKX-Quant-Windows.exe) · 649 KB | `f21a5be6c33852689a050921e2f244f161d2458f43b9c8704b049526b212ce3f` |
+| **Linux / VPS** | [`okx-strategy-1.0.0.tar.gz`](dist/okx-strategy-1.0.0.tar.gz) · 112 KB | `0788bfc960a6f8745f42b6e942f185900fe87694b115ed1525e0326fb6fd78a8` |
+
+**Windows 用法**：双击 EXE → 按向导填你自己的 OKX API Key → 在控制台里设好金额和杠杆 → 点「允许开单」。
+
+**Linux 用法**：解压后 `bash install.sh`，之后由 systemd 常驻。详见 [安装与配置](docs/install.md)。
+
+> ⚠️ **这是会真实下单的程序。** 第一次用请务必：① 先跑模拟盘 ② 每单金额设小（如 10U）③ 用单独的子账户，只放你亏得起的钱。
+
+### 校验下载文件完整性
+
+```bash
+# Windows (PowerShell)
+Get-FileHash .\OKX-Quant-Windows.exe -Algorithm SHA256
+
+# Linux
+sha256sum okx-strategy-1.0.0.tar.gz
+```
+
+和上表对比，一致才运行。
+
+---
+
 ## 这是什么
 
 - **全市场扫描**：按固定轮次拉取永续合约行情，用多周期（15m / 1H / 4H）方向一致性 + 趋势强度筛选候选标的
@@ -62,15 +89,19 @@
 - [常见问题](docs/faq.md) — 密钥安全、收益与风险、使用与故障排查
 - [示例代码](examples/README.md) — 最小可运行示例：一条命令看到整套交易链路怎么走
 
-## 这个仓库里有什么，怎么验证
+## 这个仓库里有什么
 
-| 有 | 没有 |
+| 内容 | 位置 |
 |---|---|
-| 项目说明与完整使用文档 | 策略信号逻辑 |
-| **可以自己跑通的最小可运行示例** | 风控闸门与仓位管理 |
-| OKX AI Builder Code 的接入方式 | 调度器与完整程序本体 |
+| 完整可运行程序（Windows EXE / Linux 包） | [`dist/`](dist/) |
+| 项目说明与完整使用文档 | 本页 + [`docs/`](docs/) |
+| 最小可运行示例（不下单，只演示链路） | [`examples/`](examples/) |
+| 开源许可证（含风险声明） | [`LICENSE`](LICENSE) |
 
-完整程序是本项目的核心资产，通过私有交付提供。但**集成方式是可以亲自验证的**——不需要相信文档，直接跑：
+**说明**：`dist/` 里的 EXE 是一个自解压启动器，内含完整程序（策略、风控、调度器、控制台）。
+下载即可直接运行，不需要额外编译，也不需要反编译就能用——双击就行。
+
+如果你想先**验证链路再接实盘**，可以先跑示例（不下单、不碰账户）：
 
 ```bash
 # 1) 先看它会做什么，不下单、不碰账户
@@ -104,7 +135,8 @@ node examples/minimal-demo.js --place --demo --amountUsdt 20
 ## 状态
 
 - 当前版本：持续迭代中
-- 接入状态：正在接入 OKX AI Builder Program（交易走官方 CLI，下单携带 Builder Code 用于归因）
+- 接入状态：已接入 OKX AI Builder Program（交易走官方 CLI，下单携带 Builder Code 用于归因）
+- 对外版本：v1.0.0（见 `dist/`）
 
 ## 联系
 
